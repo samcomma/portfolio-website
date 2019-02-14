@@ -42,6 +42,10 @@ section {
   padding: 80px 0;
 }
 
+.box {
+  padding: 1%;
+}
+
 /* ----- HEADINGS ----- */
 
 h1,
@@ -67,6 +71,15 @@ h2 {
   letter-spacing: 1px;
 }
 
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #0285c5;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -121,6 +134,103 @@ header {
   
   margin-left: 1px;
 } 
+
+
+/* ----------------------------------------------- */
+/* ABOUT ME */
+/* ----------------------------------------------- */
+
+
+
+.about-me-box {
+  margin-top: 30px;
+}
+
+
+.about-me-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.about-me-box:last-child {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 40px;
+}
+
+.about-me-step {
+  margin-bottom: 50px;
+}
+
+.about-me-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.about-me-step div {
+  color: #d8f2ff;
+  font-size: 150%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #d8f2ff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+  float: left;
+  padding: 5px;
+}
+
+.author-photo {
+  width: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  display: block;
+  float: right;
+  border-radius: 50%;
+}
+
+
+.author-photo img {
+  height: auto;
+  width: 100%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* ----------------------------------------------- */
+/* PROJECTS */
+/* ----------------------------------------------- */
+
+
+.project-photo {
+  width: 30%;
+  margin-right: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  display: block;
+  float: left;
+}
+.project-photo:last-child {
+  margin-right: 0;
+}
+
+.project-photo img {
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transform: scale(1.15);
+  transition: transform 0.8s, opacity 0.8s, background-color 0.8s, filter 0.8s;
+}
+
+.project-photo img:hover {
+  opacity: 0.7;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
 
 
 /* ----------------------------------------------- */
