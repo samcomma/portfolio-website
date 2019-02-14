@@ -74,7 +74,7 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #0285c5;
+  background-color: #c7ecff;
   content: " ";
   width: 150px;
   margin: 0 auto;
@@ -167,11 +167,11 @@ header {
 }
 
 .about-me-step div {
-  color: #d8f2ff;
+  color: #c7ecff;
   font-size: 150%;
   height: 50px;
   width: 50px;
-  border: 2px solid #d8f2ff;
+  border: 2px solid #c7ecff;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -188,6 +188,7 @@ header {
   display: block;
   float: right;
   border-radius: 50%;
+  border: 2px solid #c7ecff;
 }
 
 
