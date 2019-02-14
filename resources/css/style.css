@@ -212,7 +212,11 @@ header {
   background-color: #fff;
   display: block;
   float: left;
+  position: relative;
+  text-align: center;
+  color: #fff;
 }
+
 .project-photo:last-child {
   margin-right: 0;
 }
@@ -224,6 +228,15 @@ header {
   filter: grayscale(100%);
   transform: scale(1.15);
   transition: transform 0.8s, opacity 0.8s, background-color 0.8s, filter 0.8s;
+}
+
+.photo-text {
+  font-size: 110%;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project-photo img:hover {
