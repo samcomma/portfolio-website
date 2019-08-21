@@ -39,7 +39,7 @@ body {
 }
 
 section {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 .box {
@@ -74,12 +74,69 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #c7ecff;
+  background-color: #b6e7fe;
   content: " ";
   width: 150px;
   margin: 0 auto;
   margin-top: 30px;
 }
+
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #b6e7fe;
+  border: 1px solid #b6e7fe;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #b6e7fe;
+  color: #b6e7fe;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #30b9fd;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #30b9fd;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #30b9fd;
+  color: #fff;
+}
+
+.btn-all {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+
+
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -167,11 +224,11 @@ header {
 }
 
 .about-me-step div {
-  color: #c7ecff;
+  color: #b6e7fe;
   font-size: 150%;
   height: 50px;
   width: 50px;
-  border: 2px solid #c7ecff;
+  border: 2px solid #b6e7fe;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -188,7 +245,7 @@ header {
   display: block;
   float: right;
   border-radius: 50%;
-  border: 2px solid #c7ecff;
+  border: 2px solid #b6e7fe;
 }
 
 
@@ -244,6 +301,22 @@ header {
   filter: grayscale(0%);
   transform: scale(1.05);
 }
+
+
+
+/* ----------------------------------------------- */
+/* CONTACT */
+/* ----------------------------------------------- */
+
+.section-contact {
+  margin-bottom: 150px;
+}
+
+
+.section-contact p {
+  text-align: center;
+}
+
 
 
 
