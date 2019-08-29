@@ -3,12 +3,12 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css" />
   <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css" />
+
   <title>SC</title>
 </head>
 
@@ -25,7 +25,7 @@
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#writing">Writing</a>
+              <a href="#datascience">Data Science</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -62,6 +62,9 @@
     <div class="hero-text-box">
       <h1>Hey there...
         <br />My name's Sam</h1>
+      <p>I'm a software engineer and data analyst with an extensive background in financial analysis, data manipulation &amp;
+        visualization and the financial markets.
+      </p>
     </div>
   </header>
 
@@ -147,18 +150,39 @@
       <h2>Featured Projects</h2>
     </div>
     <div class="row">
-      <div class="col span-1-of-3 project-photo">
-        <img src="resources/img/project-pic-1-reduced.jpg" alt="x" />
-        <div class="photo-text">Featured Project One</div>
-      </div>
-      <div class="col span-1-of-3 project-photo">
-        <img src="resources/img/project-pic-2-crop-reduced.jpg" alt="x" />
-        <div class="photo-text">Featured Project Two</div>
-      </div>
-      <div class="col span-1-of-3 project-photo">
-        <img src="resources/img/project-pic-3-reduced.jpg" alt="x" />
-        <div class="photo-text">Featured Project Three</div>
-      </div>
+      <ul class="accordion">
+        <li>
+          <a class="toggle" href="javascript:void(1);">Item 1
+            <span class="plusminus">+</span>
+          </a>
+          <ul class="inner accordian-dropdown">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </li>
+        <li>
+          <a class="toggle" href="javascript:void(0);">Item 2
+            <span class="plusminus">+</span>
+          </a>
+          <ul class="inner accordian-dropdown">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </li>
+        <li>
+          <a class="toggle" href="javascript:void(0);">Item 3
+            <span class="plusminus">+</span>
+          </a>
+          <ul class="inner accordian-dropdown">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
     <div class="row">
       <div class="btn-all">
@@ -167,9 +191,9 @@
     </div>
   </section>
 
-  <section class="section-articles" id="writing">
+  <section class="section-articles" id="datascience">
     <div class="row">
-      <h2>Featured Articles</h2>
+      <h2>Data Science</h2>
     </div>
     <div class="row">
       <div class="col span-1-of-3 project-photo">

@@ -40,7 +40,15 @@ body {
 }
 
 section {
-  padding: 90px 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.section-about-me,
+.section-articles
+ {
+  background-color: #f4f4f4;
 }
 
 .box {
@@ -65,7 +73,7 @@ h1 {
 }
 
 h2 {
-  font-size: 180%;
+  font-size: 160%;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
@@ -153,6 +161,14 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.hero-text-box p {
+  max-width: 800px;
+  color: #fff;
+  font-size: 120%;
+  margin-bottom: 20px;
+}
+
+
 /* MAIN NAV BAR */
 
 .main-nav {
@@ -217,8 +233,14 @@ header {
 }
 
 .sticky .main-nav li a:hover,
-.sticky.main-nav li a:active {
+.sticky .main-nav li a:active {
   border-bottom: 2px solid #163b4e;
+}
+
+.sticky .social-links li a:hover,
+.sticky .social-links li a:active {
+  color: #c96c59;
+  border-bottom: 2px solid transparent;
 }
 
 
@@ -344,7 +366,7 @@ header {
 /* ----------------------------------------------- */
 
 .section-contact {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 
 .section-contact p {
@@ -356,8 +378,8 @@ header {
 /* ----------------------------------------------- */
 
 footer {
-  background-color: #003e62;
-  padding: 50px;
+  background-color: #163b4e;
+  padding: 30px;
   font-size: 80%;
 }
 
@@ -403,7 +425,7 @@ footer {
 footer p {
   color: #fff;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 /* ----- ICONS ----- */
@@ -429,4 +451,63 @@ footer p {
 
 .container {
   padding: 2px 16px;
+}
+
+
+/* ----------------------------------------------- */
+/* ACCORDIAN */
+/* ----------------------------------------------- */
+
+.accordion {
+  list-style: none;
+  max-width: 500px;
+}
+.accordion ul {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion ul li {
+  margin: .5em 0;
+}
+.accordion ul li a.toggle {
+  width: 100%;
+  display: block;
+  color: #fefefe;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+.accordion ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.accordion ul .inner {
+  display: none;
+  padding-left: 1em;
+  overflow: hidden;
+}
+.accordion ul .inner .show {
+  display: block;
+}
+
+.accordian-dropdown {
+  display: none;
+}
+
+
+.accordion a {
+  text-decoration: none;
+  color: inherit;
+}
+.accordion p {
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+.accordion .description {
+  margin: 1em auto 2.25em;
+}
+
+.plusminus {
+  float: right;
 }

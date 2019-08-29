@@ -14,7 +14,6 @@ $(document).ready(function () {
 
 
   /* FOR SCROLLING TO SECTIONS FROM NAVBAR LINKS*/
-
   $(function () {
     $('a[href*="#"]:not([href="#"])')
       .click(function () {
@@ -38,6 +37,26 @@ $(document).ready(function () {
         }
       })
   })
+
+  /* FOR ACCORDIAN MENUS FUNCTIONALITY*/
+  $('.toggle').click(function (e) {
+    e.preventDefault();
+
+    var $this = $(this);
+
+    if ($this.next().hasClass('show')) {
+      $this.next().removeClass('show');
+      $this.next().slideUp(350);
+      $(".plusminus").text('+');
+    } else {
+      $this.parent().parent().find('li .inner').removeClass('show');
+      $this.parent().parent().find('li .inner').slideUp(350);
+      $this.next().toggleClass('show');
+      $this.next().slideToggle(350);
+      $(this).children(".plusminus").text('-');
+    }
+  });
+
 })
 
 
