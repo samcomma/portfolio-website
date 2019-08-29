@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
   /* FOR STICKY NAV BAR */
-  $('.js--section-features').waypoint(function (direction) {
+  $('.js--section-about-me').waypoint(function (direction) {
     if (direction === "down") {
       $('nav').addClass('sticky')
     } else {

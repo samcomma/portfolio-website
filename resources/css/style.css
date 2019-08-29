@@ -11,7 +11,7 @@
 html,
 body {
   background-color: #fff;
-  color: #555;
+  color: #141618;
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -45,8 +45,7 @@ section {
   min-height: 100vh;
 }
 
-.section-about-me,
-.section-articles
+.section-projects
  {
   background-color: #f4f4f4;
 }
@@ -73,7 +72,7 @@ h1 {
 }
 
 h2 {
-  font-size: 160%;
+  font-size: 140%;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
@@ -83,7 +82,7 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #6aa7c8;
+  background-color: #141618;
   content: ' ';
   width: 150px;
   margin: 0 auto;
@@ -98,7 +97,6 @@ input[type='submit'] {
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
-  border-radius: 200px;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
@@ -108,21 +106,19 @@ input[type='submit'] {
 input[type='submit'] {
   background-color: #b6e7fe;
   border: 1px solid #b6e7fe;
-  color: #fff;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #b6e7fe;
-  color: #b6e7fe;
+  border: 1px solid #141618;
+  color: #141618;
 }
 
 .btn:hover,
 .btn:active,
 input[type='submit']:hover,
 input[type='submit']:active {
-  background-color: #30b9fd;
 }
 
 .btn-full:hover,
@@ -132,14 +128,36 @@ input[type='submit']:active {
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #30b9fd;
-  color: #fff;
+  border: 1px solid #c96c59;
+  color: #c96c59;
 }
 
 .btn-all {
   text-align: center;
   margin-top: 50px;
 }
+
+.btn-reduced {
+  margin: 20px 0;
+}
+
+.btn-reduced:hover,
+.btn-reduced:active {
+  border: 1px solid #c96c59;
+  color: #c96c59;
+}
+.btn-reduced:link,
+.btn-reduced:visited,
+input[type='submit'] {
+  font-size: 70%;
+  padding: 7px 21px;
+  font-weight: 300;
+  border-radius: 200px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
 
 /* ----------------------------------------------- */
 /* HEADER */
@@ -229,12 +247,12 @@ header {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   padding: 16px 0;
-  color: #163b4e;
+  color: #141618;
 }
 
 .sticky .main-nav li a:hover,
 .sticky .main-nav li a:active {
-  border-bottom: 2px solid #163b4e;
+  border-bottom: 2px solid 141618;
 }
 
 .sticky .social-links li a:hover,
@@ -286,11 +304,11 @@ header {
 }
 
 .about-me-step div {
-  color: #6aa7c8;
+  color: #141618;
   font-size: 150%;
   height: 50px;
   width: 50px;
-  border: 2px solid #6aa7c8;
+  border: 2px solid #141618;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -307,7 +325,7 @@ header {
   display: block;
   float: right;
   border-radius: 50%;
-  border: 2px solid #6aa7c8;
+  border: 1.5px solid #141618;
 }
 
 .author-photo img {
@@ -459,6 +477,7 @@ footer p {
 /* ----------------------------------------------- */
 
 .accordion {
+  margin-top: 30px;
   list-style: none;
   max-width: 500px;
 }
@@ -467,9 +486,13 @@ footer p {
   padding: 0;
 }
 
-.accordion ul li {
-  margin: .5em 0;
+
+.accordion li {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #C0C0C0
 }
+
 .accordion ul li a.toggle {
   width: 100%;
   display: block;
@@ -482,6 +505,7 @@ footer p {
   background: rgba(0, 0, 0, 0.9);
 }
 
+
 .accordion ul .inner {
   display: none;
   padding-left: 1em;
@@ -493,6 +517,7 @@ footer p {
 
 .accordian-dropdown {
   display: none;
+  margin-top: 20px;
 }
 
 
@@ -501,8 +526,13 @@ footer p {
   color: inherit;
 }
 .accordion p {
-  font-size: 1.1em;
-  margin: 1em 0;
+  font-size: 75%;
+  margin: 10px 0;
+}
+
+.accordion .title {
+  font-weight: 400;
+  margin-top: 20px;
 }
 .accordion .description {
   margin: 1em auto 2.25em;
@@ -510,4 +540,6 @@ footer p {
 
 .plusminus {
   float: right;
+  font-size: 120%;
+  font-weight: 400;
 }
