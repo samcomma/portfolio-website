@@ -178,6 +178,7 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -412,7 +413,7 @@ header {
 
 .section-contact p {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .section-contact p a {
