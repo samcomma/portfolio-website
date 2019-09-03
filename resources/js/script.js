@@ -48,9 +48,12 @@ $(document).ready(function () {
       $this.next().removeClass('show');
       $this.next().slideUp(350);
       $(".plusminus").text('+');
-    } else {
+    }
+
+    else {
       $this.parent().parent().find('li .inner').removeClass('show');
       $this.parent().parent().find('li .inner').slideUp(350);
+      $(".plusminus").text('+');
       $this.next().toggleClass('show');
       $this.next().slideToggle(350);
       $(this).children(".plusminus").text('-');
