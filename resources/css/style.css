@@ -115,7 +115,7 @@ input[type='submit'] {
 .btn-ghost:visited {
   border: 1.2px solid #555;
   color: #555;
-  transition: text-shadow .2s;
+  transition: text-shadow .3s;
 }
 
 .btn:hover,
@@ -133,7 +133,7 @@ input[type='submit']:active {
 .btn-ghost:active {
   border: 1.2px solid #c96c59;
   color: #c96c59;
-  text-shadow: 0 0 .4px #c96c59, 0 0 .4px #c96c59, 0 0 .4px #c96c59, 0 0 .4px #c96c59;
+  text-shadow: 0 0 .3px #c96c59, 0 0 .3px #c96c59, 0 0 .3px #c96c59, 0 0 .3px #c96c59;
 }
 
 .btn-all {
