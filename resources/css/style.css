@@ -113,8 +113,9 @@ input[type='submit'] {
 
 .btn-ghost:link,
 .btn-ghost:visited {
-  border: 1px solid #555;
+  border: 1.2px solid #555;
   color: #555;
+  transition: text-shadow .2s;
 }
 
 .btn:hover,
@@ -130,8 +131,9 @@ input[type='submit']:active {
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #c96c59;
+  border: 1.2px solid #c96c59;
   color: #c96c59;
+  text-shadow: 0 0 .4px #c96c59, 0 0 .4px #c96c59, 0 0 .4px #c96c59, 0 0 .4px #c96c59;
 }
 
 .btn-all {
@@ -145,16 +147,16 @@ input[type='submit']:active {
 
 .btn-reduced:hover,
 .btn-reduced:active {
-  border: 1px solid #c96c59;
+  border: 1.2px solid #c96c59;
   color: #c96c59;
 }
 .btn-reduced:link,
 .btn-reduced:visited,
 input[type='submit'] {
   font-size: 70%;
-  padding: 7px 21px;
+  padding: 6px 15px;
   font-weight: 300;
-  border-radius: 200px;
+  border-radius: 2px;
   text-decoration: none;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -430,8 +432,8 @@ header {
 /* ----------------------------------------------- */
 
 footer {
-  background-color: #163b4e;
-  padding: 30px;
+  background-color: #00476D;
+  padding: 25px;
   font-size: 80%;
 }
 
