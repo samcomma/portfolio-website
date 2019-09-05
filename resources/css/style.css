@@ -47,7 +47,7 @@ section {
 
 .section-projects
  {
-  background-color: rgb(247, 242, 243);
+  background-color: #dfe7e7;
 }
 
 .box {
@@ -115,7 +115,7 @@ input[type='submit'] {
 .btn-ghost:visited {
   border: 1.2px solid #555;
   color: #555;
-  transition: text-shadow .3s;
+  transition: text-shadow .2s;
 }
 
 .btn:hover,
@@ -570,6 +570,8 @@ footer p {
 .accordion a {
   text-decoration: none;
   color: inherit;
+  font-weight: 400;
+
 }
 .accordion p {
   font-size: 75%;
@@ -589,4 +591,5 @@ footer p {
   font-size: 100%;
   font-weight: 400;
   padding-right: 20px;
+  color: #c96c59;
 }
