@@ -203,8 +203,12 @@ header {
 .author-name {
   text-align: left;
   visibility: hidden;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 80%;
+}
+
+.author-name a {
+  padding: 15px 0;
 }
 
 .main-nav li {
