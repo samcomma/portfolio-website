@@ -45,11 +45,6 @@ section {
   min-height: 100vh;
 }
 
-.section-projects
- {
-  background-color: #dfe7e7;
-}
-
 .box {
   padding: 1%;
 }
@@ -274,20 +269,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------------------------- */
 /* ABOUT ME */
 /* ----------------------------------------------- */
@@ -312,6 +293,7 @@ header {
 }
 
 .about-me-step p {
+  font-size: 90%;
   margin-bottom: 20px;
 }
 
@@ -354,6 +336,11 @@ header {
 /* ----------------------------------------------- */
 /* PROJECTS */
 /* ----------------------------------------------- */
+
+.section-projects
+ {
+  background-color: #dfe7e7;
+}
 
 .project-photo {
   width: 30%;
@@ -406,6 +393,7 @@ header {
 }
 
 .section-contact p {
+  font-size: 90%;
   text-align: center;
   padding-top: 30px;
 }
@@ -474,31 +462,6 @@ footer p {
   margin-top: 10px;
 }
 
-/* ----- ICONS ----- */
-
-.icon-big {
-  font-size: 300%; /* Note that these icons are icon-fonts so their size is adjusted by adjusting font size */
-  display: block;
-  color: #6aa7c8;
-  margin-bottom: 10px;
-}
-
-/* ----- CARDS ----- */
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 90%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
 
 /* ----------------------------------------------- */
 /* ACCORDIAN */
@@ -520,7 +483,6 @@ footer p {
   padding: 0;
 }
 
-
 .accordion li {
   margin-top: 15px 0;
   padding-top: 25px;
@@ -536,16 +498,17 @@ footer p {
   border-radius: 0.15em;
   transition: background .3s ease;
 }
+
 .accordion ul li a.toggle:hover {
   background: rgba(0, 0, 0, 0.9);
 }
-
 
 .accordion ul .inner {
   display: none;
   padding-left: 1em;
   overflow: hidden;
 }
+
 .accordion ul .inner .show {
   display: block;
 }
@@ -553,7 +516,6 @@ footer p {
 .accordian-dropdown {
   display: none;
 }
-
 
 .accordion a {
   text-decoration: none;
