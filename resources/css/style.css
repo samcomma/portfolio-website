@@ -339,7 +339,7 @@ header {
 
 .section-projects
  {
-  background-color: #dfe7e7;
+  background-color: rgb(250, 236, 235);
 }
 
 .project-photo {
@@ -353,8 +353,6 @@ header {
   text-align: center;
   color: #fff;
 }
-
-
 
 .project-photo:last-child {
   margin-right: 0;
@@ -542,4 +540,8 @@ footer p {
   font-weight: 400;
   padding-right: 20px;
   color: #c96c59;
+}
+
+.sub-note {
+  margin-top: 50px;
 }
